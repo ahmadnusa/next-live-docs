@@ -9,6 +9,7 @@ export default function Loader() {
         width={32}
         height={32}
         className="animate-spin"
+        priority
       />
       <p className="text-center">Loading...</p>
     </div>
