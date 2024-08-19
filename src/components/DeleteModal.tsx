@@ -72,6 +72,7 @@ export default function DeleteModal({ roomId }: DeleteModalProps) {
             variant="destructive"
             onClick={deleteDocumentHandler}
             className="gradient-red w-full"
+            disabled={loading}
           >
             {loading ? "Deleting..." : "Delete"}
           </Button>

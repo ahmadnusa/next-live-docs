@@ -11,6 +11,7 @@ import { updateDocument } from "@/lib/actions/room.action"
 
 import ActiveCollaborators from "./ActiveCollaborators"
 import Loader from "./Loader"
+import ShareModal from "./ShareModal"
 import { Input } from "./ui/input"
 
 export default function CollaborativeRoom({
@@ -121,12 +122,12 @@ export default function CollaborativeRoom({
             <div className="flex w-full flex-1 justify-end gap-2 sm:gap-3">
               <ActiveCollaborators />
 
-              {/* <ShareModal 
+              <ShareModal
                 roomId={roomId}
                 collaborators={users}
                 creatorId={roomMetadata.creatorId}
                 currentUserType={currentUserType}
-              /> */}
+              />
 
               <SignedOut>
                 <SignInButton />
